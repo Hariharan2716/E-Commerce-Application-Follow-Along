@@ -76,3 +76,12 @@ Ensured that sensitive user data, such as password, remains protected during aut
 Followed industry best practices to prevent common vulnerabilities, such as brute force attacks.
 This milestone provides the foundation for user authentication, paving the way for implementing session management and token-based authentication in future milestones.
 
+# Milestone 8: Desigining the Homepage and card Component
+
+In this milestone, we focused on creating a visually appealing and functional homepage layout with reusable components for showcasing products. Key achievements include:
+
+1. Card Component: Designed a resuable card component for displaying product information such as: Product Name Product Image Product Price
+2. Homepage Layout: Set up a clean and responsive homepage layout for displaying multiple product cards. Utilized grid layout and flexbox to ensure a visually consistent and user-friendly design.
+3. Component Reusability: Ensured the card component is modular and adapatable for use across different pages of the application.
+
+4. Code Submission: Pushed the updated code to GitHub repository.
