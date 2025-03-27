@@ -1,11 +1,12 @@
-Ecommerce-Follow-Along
+# Ecommerce-Follow-Along
+
 Project Description
 
 The Ecommerce Follow Along project is designed to help developers build a full-stack e-commerce web application using the MERN stack (MongoDB, Express, React, and Node.js). This project follows a hands-on approach, where you will learn and implement key concepts such as user authentication, product management, and order handling through RESTful APIs. By the end of the project, you will have built a functioning e-commerce platform with core features, using JavaScript across both the client and server side.
 
 The MERN stack allows for a seamless and efficient development process, providing a unified language (JavaScript) for the entire stack, making it easier for developers to build, scale, and maintain web applications.
 
-**Milestone 1: **
+# Milestone 1:
 
 Project Overview In this milestone, we introduced the foundations of building a full-stack e-commerce application using the MERN stack. Key topics covered include:
 
@@ -19,28 +20,32 @@ Add, update, and view products within the e-commerce platform. Order Management:
 
 Create, update, and view customer orders.
 
-Milestone 2: Project Setup and Login Page
+# Milestone 2: Project Setup and Login Page
 
 In this milestone, we focused on setting up the initial front-end structure and implementing the login page for the application. Key achievements include:
 
 Front-End Framework: Set up the React framework with Vite for a fast and modern development experience. Folder Structure: Organized the src folder to include separate directories for components, pages, and assets to improve scalability and maintainability. Login Page Implementation: Developed a basic login page (Login.jsx) that includes a user interface for email and password input. Incorporated validation logic to ensure proper user input. Routing: Implemented React Router for navigation and created routes for the login and signup pages. Styling: Added basic styling using CSS (App.css) to ensure a clean and user-friendly design. Git Integration: Added the new files to version control and committed progress to the GitHub repository. This milestone lays the groundwork for creating the front-end interface and interaction logic for the application.
 
-Milestone 3: Project Setup for Backend
+# Milestone 3: Project Setup for Backend
+
 In this milestone, the foundational backend structure for the e-commerce application was successfully established. Key achievements include:
 
 Backend Folder Structure: Organized the project into clearly defined folders (config, controller, db, middleware, model, and utility) to ensure scalability and maintainability. Database Integration: Set up a connection to MongoDB using Mongoose, enabling seamless interaction with the database. Environment Configuration Implemented a .env file to securely manage sensitive data such as database credentials, ensuring better security practices. Middleware Implementation Created essential middleware for authentication, error handling, and asynchronous error management to streamline request processing and ensure robust error handling. Utility Functions -Added reusable utility components like a custom error handler to improve consistency and simplify debugging.
 
 Git Integration Configured version control with Git and included a .gitignore file to exclude sensitive files and unnecessary folders like node_modules. This milestone sets up a solid backend foundation for further development, including API implementation, user authentication, and business logic handling. It ensures that the project is structured, secure, and ready for future expansion.
 
-Milestone 4: Creating User Model and Controller
+# Milestone 4: Creating User Model and Controller
+
 In this milestone, the focus was on implementing the user model and controller for managing user data and operations in the backend. Key achievements include:
 
 User Model: Created a User schema using Mongoose to define the structure for storing user information in the MongoDB database. Fields include essential user details such as name, email, password, and timestamps. Added validation for required fields and unique constraints for the email field. Password Hashing: Implemented password hashing using bcrypt to securely store user passwords in the database. User Controller: Developed a user controller to handle user-related backend operations such as registration and login. Added methods for creating new users and retrieving user details. API Endpoints: Set up API routes for user-related operations, including: /api/users/register: Endpoint to register a new user. /api/users/login: Endpoint to authenticate a user. Error Handling: Added error handling for scenarios such as duplicate email registration and invalid login credentials. Git Integration: Committed progress to version control, ensuring proper documentation of changes and updates. This milestone provides the necessary backend infrastructure to manage user data, supporting future features like user authentication and authorization.
 
-Milestone 5: Creating the Signup Page
+# Milestone 5: Creating the Signup Page
+
 In this milestone, we focused on developing the signup page to enable users to create an account within the application. Key achievements include: Signup Page Implementation: Developed the Signup.jsx component with a user-friendly interface for account registration. Included form fields for user details such as name, email, and password. Form Validation: Added client-side validation logic to ensure proper input formatting and error messages for invalid entries. Integration with Routing: Configured navigation to and from the signup page using React Router for seamless user flow. Styling: Enhanced the design of the signup page to align with the application's overall styling for a consistent user experience. Code Organization: Refactored the code into reusable components where possible to promote cleaner and more maintainable code. This milestone enhances the user experience by allowing new users to register, paving the way for further integration with back-end user authentication systems.
 
-Milestone 6: creating the backend endpoint for the Signup page to store all user data securely
+# Milestone 6: creating the backend endpoint for the Signup page to store all user data securely
+
 Create a secure backend endpoint for user signup, encrypting passwords and storing user data safely.
 
 Goals: -Encrypt passwords before saving. -Securely store user details in the database.
@@ -48,3 +53,26 @@ Goals: -Encrypt passwords before saving. -Securely store user details in the dat
 Why Encrypt Passwords? -Protect Data: Keeps passwords safe if breached. -Privacy: Prevents password visibility. -Compliance: Meets GDPR, PCI-DSS standards. -Security: Thwarts password theft.
 
 Steps: -Encrypt Passwords: Use bcrypt to hash passwords. -Store hashed passwords in the database. -Store User Data: -Save user details (name, email, etc.) securely. -Ensure passwords are encrypted.
+
+# Milestone 7: Createing the Logic Endpoint
+
+In this milestone, we focused on implementing a secure and efficient login endpoint for user authentication.  Key achievements include:
+
+1. Login Endpoint Creation: 
+Developed an API endpoint (/api/users/login) to handle user login requests.
+Configured the endpoint to accept user credentials, such as email/username and password.
+
+2. User Retrieval:
+Implemented logic to retrieve the corresponding user from the MongoDB database based on the provided email or username.  
+3. Password Validation:
+Utilized bcrypt to compare the hashed password entered by the user with the stored hashed password in the database.  Ensured the only valid credentials allow user authentication while prociding appropriate error messages for valid credentials allow user authentication while providing appropriate error messages from invalid inputs.
+
+4. Error Handling:
+Added robust error handling to return informaive responses for scnarios such as Non-existent users.
+Incorrect password.
+5. Security Enhancements:
+
+Ensured that sensitive user data, such as password, remains protected during authentication.
+Followed industry best practices to prevent common vulnerabilities, such as brute force attacks.
+This milestone provides the foundation for user authentication, paving the way for implementing session management and token-based authentication in future milestones.
+
