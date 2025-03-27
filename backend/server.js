@@ -1,4 +1,6 @@
 const app = require("./app");
+const cors = require('cors');
+app.use(cors({origin: 'http://localhost:5173'}));
 const connectDatabase = require("./db/Database");
 
 // Handling uncaught Exception when setting up backend server
