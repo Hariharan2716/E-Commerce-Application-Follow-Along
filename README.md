@@ -85,3 +85,21 @@ In this milestone, we focused on creating a visually appealing and functional ho
 3. Component Reusability: Ensured the card component is modular and adapatable for use across different pages of the application.
 
 4. Code Submission: Pushed the updated code to GitHub repository.
+
+# Milestone 9: Creating the product Form
+
+In this milestone, we focused on building a form that allows users to add products, Including support for multiple product images.  Key achievements include:
+
+1. Product Form Implementation:
+Designed and developed a form to capture essential product details, such as: 
+Product Name
+Description
+Price 
+Category
+MultipleProduct Images (file upload support)
+2. Image upload Handling:
+Implemented functionality to allow multiple product images to be uploaded.
+Ensured proper validation for image formats and file sizes.
+3. Data Management:
+Configured state management to handle form inputs efficiently.
+Validated user inputs before submission to ensure accurate product data.
