@@ -1,7 +1,7 @@
 const app = require("./app");
 const cors = require('cors');
-app.use(cors({origin: 'http://localhost:5173'}));
-const connectDatabase = require("./db/Database");
+// app.use(cors({origin: 'http://localhost:5173'}));
+// const connectDatabase = require("./db/Database");
 
 // Handling uncaught Exception when setting up backend server
 process.on("uncaughtException", (err) => {
@@ -25,3 +25,13 @@ const server = app.listen(process.env.PORT, () => {
     `Server is running on http://localhost:${process.env.PORT}`
   );
 });
+
+// unhandled promise rejection(explain error handling when setting up server as you code)
+process.on("unhandledRejection", (err) => { 
+  console.error(`Unhandled Rejection: ${err.message}`);
+  console.log("Shutting down the server due to unhandled promise rejection.");
+
+  server.close(()=>{
+    process.exit(1);  
+  })
+})
