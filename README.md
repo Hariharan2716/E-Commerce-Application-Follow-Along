@@ -20,11 +20,15 @@ Add, update, and view products within the e-commerce platform. Order Management:
 
 Create, update, and view customer orders.
 
+
+
 # Milestone 2: Project Setup and Login Page
 
 In this milestone, we focused on setting up the initial front-end structure and implementing the login page for the application. Key achievements include:
 
 Front-End Framework: Set up the React framework with Vite for a fast and modern development experience. Folder Structure: Organized the src folder to include separate directories for components, pages, and assets to improve scalability and maintainability. Login Page Implementation: Developed a basic login page (Login.jsx) that includes a user interface for email and password input. Incorporated validation logic to ensure proper user input. Routing: Implemented React Router for navigation and created routes for the login and signup pages. Styling: Added basic styling using CSS (App.css) to ensure a clean and user-friendly design. Git Integration: Added the new files to version control and committed progress to the GitHub repository. This milestone lays the groundwork for creating the front-end interface and interaction logic for the application.
+
+
 
 # Milestone 3: Project Setup for Backend
 
@@ -34,15 +38,21 @@ Backend Folder Structure: Organized the project into clearly defined folders (co
 
 Git Integration Configured version control with Git and included a .gitignore file to exclude sensitive files and unnecessary folders like node_modules. This milestone sets up a solid backend foundation for further development, including API implementation, user authentication, and business logic handling. It ensures that the project is structured, secure, and ready for future expansion.
 
+
+
 # Milestone 4: Creating User Model and Controller
 
 In this milestone, the focus was on implementing the user model and controller for managing user data and operations in the backend. Key achievements include:
 
 User Model: Created a User schema using Mongoose to define the structure for storing user information in the MongoDB database. Fields include essential user details such as name, email, password, and timestamps. Added validation for required fields and unique constraints for the email field. Password Hashing: Implemented password hashing using bcrypt to securely store user passwords in the database. User Controller: Developed a user controller to handle user-related backend operations such as registration and login. Added methods for creating new users and retrieving user details. API Endpoints: Set up API routes for user-related operations, including: /api/users/register: Endpoint to register a new user. /api/users/login: Endpoint to authenticate a user. Error Handling: Added error handling for scenarios such as duplicate email registration and invalid login credentials. Git Integration: Committed progress to version control, ensuring proper documentation of changes and updates. This milestone provides the necessary backend infrastructure to manage user data, supporting future features like user authentication and authorization.
 
+
+
 # Milestone 5: Creating the Signup Page
 
 In this milestone, we focused on developing the signup page to enable users to create an account within the application. Key achievements include: Signup Page Implementation: Developed the Signup.jsx component with a user-friendly interface for account registration. Included form fields for user details such as name, email, and password. Form Validation: Added client-side validation logic to ensure proper input formatting and error messages for invalid entries. Integration with Routing: Configured navigation to and from the signup page using React Router for seamless user flow. Styling: Enhanced the design of the signup page to align with the application's overall styling for a consistent user experience. Code Organization: Refactored the code into reusable components where possible to promote cleaner and more maintainable code. This milestone enhances the user experience by allowing new users to register, paving the way for further integration with back-end user authentication systems.
+
+
 
 # Milestone 6: creating the backend endpoint for the Signup page to store all user data securely
 
@@ -53,6 +63,8 @@ Goals: -Encrypt passwords before saving. -Securely store user details in the dat
 Why Encrypt Passwords? -Protect Data: Keeps passwords safe if breached. -Privacy: Prevents password visibility. -Compliance: Meets GDPR, PCI-DSS standards. -Security: Thwarts password theft.
 
 Steps: -Encrypt Passwords: Use bcrypt to hash passwords. -Store hashed passwords in the database. -Store User Data: -Save user details (name, email, etc.) securely. -Ensure passwords are encrypted.
+
+
 
 # Milestone 7: Createing the Logic Endpoint
 
@@ -75,4 +87,15 @@ Incorrect password.
 Ensured that sensitive user data, such as password, remains protected during authentication.
 Followed industry best practices to prevent common vulnerabilities, such as brute force attacks.
 This milestone provides the foundation for user authentication, paving the way for implementing session management and token-based authentication in future milestones.
+
+
+# Milestone 8: Desigining the Homepage and card Component
+
+In this milestone, we focused on creating a visually appealing and functional homepage layout with reusable components for showcasing products. Key achievements include:
+
+1. Card Component: Designed a resuable card component for displaying product information such as: Product Name Product Image Product Price
+2. Homepage Layout: Set up a clean and responsive homepage layout for displaying multiple product cards. Utilized grid layout and flexbox to ensure a visually consistent and user-friendly design.
+3. Component Reusability: Ensured the card component is modular and adapatable for use across different pages of the application.
+
+4. Code Submission: Pushed the updated code to GitHub repository.
 
