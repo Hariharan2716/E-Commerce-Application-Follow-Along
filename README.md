@@ -103,7 +103,6 @@ In this milestone, we focused on creating a visually appealing and functional ho
 4. Code Submission: Pushed the updated code to GitHub repository.
 
 
-
 # Milestone 9: Creating the product Form
 
 In this milestone, we focused on building a form that allows users to add products, Including support for multiple product images.  Key achievements include:
@@ -121,6 +120,7 @@ Ensured proper validation for image formats and file sizes.
 3. Data Management:
 Configured state management to handle form inputs efficiently.
 Validated user inputs before submission to ensure accurate product data.
+
 
 # Milestone 10: Creating the Product Schema and API Endpoint 
 In this milestone, we focused on defining the structure of product data and creating an API endpoint to store product details in MongoDB.
@@ -140,3 +140,4 @@ Saved product information to MongoDB using Mongoose models.
 3.  Data Validation and Intergrity: 
 Enforcced strict validation to prevent invalid or incmplete product entries.
 Returned appropriate error messages for missing or incorrect data inputs.
+
