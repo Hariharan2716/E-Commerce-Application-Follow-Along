@@ -121,3 +121,4 @@ Ensured proper validation for image formats and file sizes.
 3. Data Management:
 Configured state management to handle form inputs efficiently.
 Validated user inputs before submission to ensure accurate product data.
+
