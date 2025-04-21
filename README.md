@@ -6,7 +6,7 @@ The Ecommerce Follow Along project is designed to help developers build a full-s
 
 The MERN stack allows for a seamless and efficient development process, providing a unified language (JavaScript) for the entire stack, making it easier for developers to build, scale, and maintain web applications.
 
-**Milestone 1: **
+# Milestone 1: 
 
 Project Overview
 In this milestone, we introduced the foundations of building a full-stack e-commerce application using the MERN stack. Key topics covered include:
@@ -43,7 +43,7 @@ Order Management:
 
 Create, update, and view customer orders.
 
-**Milestone 2: Project Setup and Login Page**
+# Milestone 2: Project Setup and Login Page
 
 
 In this milestone, we focused on setting up the initial front-end structure and implementing the login page for the application. Key achievements include:
@@ -292,7 +292,9 @@ Responsive Design
 Used CSS Flexbox and media queries to ensure the Navbar is fully responsive on all screen sizes (mobile, tablet, desktop).
 Added a hamburger menu for smaller screens to toggle the navigation links.
 
+
 # Milestone 16: Product Info Page with Quantity Selection and Add to Cart
+
  In this milestone, we focused on creating a dedicated Product Info Page to display detailed information for each product and allow users to select quantity and add the product to their cart.
  
  Frontend: Product Info Page
@@ -324,6 +326,7 @@ Added a hamburger menu for smaller screens to toggle the navigation links.
  State Management and API Integration
  Fetched the updated cart state from the backend after adding a product.
  Managed the cart state using React state.
+
 
  # Milestone 18: Creating an end point for cart page
  In this milestone, we implemented a backend endpoint to fetch all the products inside a user's cart. This functionality is essential for displaying the cart contents on the cart page.
@@ -359,3 +362,4 @@ A user can view product details on a dedicated product info page
 A user can add products ot their cart
 A user can view their cart contents on the cart page
 A user can update the quantity of products in their cart
+
