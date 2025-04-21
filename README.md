@@ -292,7 +292,9 @@ Responsive Design
 Used CSS Flexbox and media queries to ensure the Navbar is fully responsive on all screen sizes (mobile, tablet, desktop).
 Added a hamburger menu for smaller screens to toggle the navigation links.
 
-#  Milestone 16: Product Info Page with Quantity Selection and Add to Cart
+
+# Milestone 16: Product Info Page with Quantity Selection and Add to Cart
+
  In this milestone, we focused on creating a dedicated Product Info Page to display detailed information for each product and allow users to select quantity and add the product to their cart.
  
  Frontend: Product Info Page
@@ -324,3 +326,21 @@ Added a hamburger menu for smaller screens to toggle the navigation links.
  State Management and API Integration
  Fetched the updated cart state from the backend after adding a product.
  Managed the cart state using React state.
+
+
+ # Milestone 18: Creating an end point for cart page
+ In this milestone, we implemented a backend endpoint to fetch all the products inside a user's cart. This functionality is essential for displaying the cart contents on the cart page.
+ 
+ Backend: API Integration
+ Created a new API endpoint to fetch all products in a user's cart.
+ Implemented server-side logic to retrieve the cart contents from the database.
+ Frontend: Cart Page
+ Designed a new Cart Page component that displays the products in the user's cart.
+ Used React Router to navigate to the Cart Page.
+ State Management and API Integration
+ Fetched the cart contents from the backend using the API endpoint. The final product will have the following features:
+ A user can view all products on the homepage.
+ A user can view product details on a dedicated product info page.
+ A user can add products to their cart.
+ A user can view their cart contents on the cart page.
+
