@@ -6,7 +6,7 @@ The Ecommerce Follow Along project is designed to help developers build a full-s
 
 The MERN stack allows for a seamless and efficient development process, providing a unified language (JavaScript) for the entire stack, making it easier for developers to build, scale, and maintain web applications.
 
-**Milestone 1: **
+# Milestone 1: 
 
 Project Overview
 In this milestone, we introduced the foundations of building a full-stack e-commerce application using the MERN stack. Key topics covered include:
@@ -43,7 +43,7 @@ Order Management:
 
 Create, update, and view customer orders.
 
-**Milestone 2: Project Setup and Login Page**
+# Milestone 2: Project Setup and Login Page
 
 
 In this milestone, we focused on setting up the initial front-end structure and implementing the login page for the application. Key achievements include:
