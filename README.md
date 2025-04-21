@@ -154,3 +154,22 @@ Managed the fetched data using React useState and useEffect hooks to ensure dyna
 Passed the fetched product data to a ProductCard component.
 Used the product details (name, image, price, etc.) ad props to display them dynamically.
 Applied responsive CSS styling to create a visually appealing product grid layout.
+
+# Milestone 12: Filtering Products by User Email and Displaying Data
+
+In this milestone, we focused on filtering products based on the user's email and sending only relevant product data to the frontend.  Key achievements include:
+
+1.  Backend:  Creating a Filtered API Endpoint
+Developed a GET endpoint (/api/products/:email) to return products associated with a specific user email.
+Used Mongoose to query the database and fetch only the products uploaded by the provided email.
+
+Implemented error handling to manage scenarios where no products match the email.
+2.  Frontend:  Fectching Filtered Data from API
+Created a function in React to fetch only products uploaded by the logged-in user.
+Used Axios or Fetch API to make requests to the backend with the logged-in user's email.
+Managed product data using useState and useEffect hooks.
+
+3.  Displaying Filtered Products Dynamically
+Passed the fetched filtered product data to a ProductCard component.
+Rendered proudct details such as name, image, price, and descritption dynamically.
+Ensured a clean and structrued UI using CSS and responsive layout techniques.

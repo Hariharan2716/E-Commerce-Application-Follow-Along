@@ -13,6 +13,26 @@ const sendMail = require("../utils/sendMail");
 // require("dotenv").config();
 
 
+router.post("/create-user", upload.single("file"), async(req, res, next) => {
+  const  {name, email, password} = req.body;
+  const userEmail = await User.findOne({email});
+})
+
+  const fileUrl = `/uploads/${filename}`;
+ 
+  const user = { name, email, password, avatar: fileUrl };
+  const activationToken = createActivationToken(user);
+  const activationUrl = `http://localhost:8000/activation/${activationToken}`;
+  try {
+    await sendMail({
+      email: user.email,
+      subject: "Account Activation",
+      message: `Please click on the link to activate your account: ${activationUrl}`,
+  });
+} catch (error) {
+  return next(new ErrorHandler(error.message, 400));
+  }
+
 // Create user
 router.post("/create-user", upload.single("file"), async (req, res, next) => {
   const {name, email, password} = req.body;
@@ -84,6 +104,5 @@ router.post("/activation", catchAsyncErrors(async(req, res, next) => {
   }
 }
 ));
-
 
 module.exports = router;
