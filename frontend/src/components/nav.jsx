@@ -1,3 +1,4 @@
+
 /* eslint-disable no-unused-vars */
 // src/components/NavBar.jsx
 import React, { useState } from 'react';
@@ -110,6 +111,19 @@ const NavBar = () => {
                                     Cart
                                 </NavLink>
                             </li>
+
+                            <li>
+                                <NavLink
+                                    to="/profile"
+                                    className={({ isActive }) =>
+                                        isActive
+                                            ? "text-white font-semibold px-3 py-2 rounded-md text-sm transition-colors duration-200"
+                                            : "text-gray-200 hover:text-white px-3 py-2 rounded-md text-sm transition-colors duration-200"
+                                    }
+                                >
+                                    Profile
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -172,6 +186,20 @@ const NavBar = () => {
                                 Cart
                             </NavLink>
                         </li>
+                        <li>
+                            <NavLink
+                                to="/profile"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? "block text-white font-semibold px-3 py-2 rounded-md text-base transition-colors duration-200"
+                                        : "block text-gray-200 hover:text-white px-3 py-2 rounded-md text-base transition-colors duration-200"
+                                }
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Profile
+                            </NavLink>
+                        </li>
+
                     </ul>
                 </div>
             )}
